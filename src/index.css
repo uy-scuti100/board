@@ -3,6 +3,7 @@
 @tailwind utilities;
 * {
   font-family: nunito, sans-serif;
+  box-sizing: border-box;
 }
 
 @layer {
@@ -18,6 +19,11 @@
 @layer utilities {
   .flex-1 {
     flex: 1;
+  }
+}
+@layer utilities {
+  .flex-2 {
+    flex: 2;
   }
 }
 
@@ -44,5 +50,17 @@
     background-color: rgba(225, 217, 0, 0.5);
     padding: 5px;
     border-radius: 5px;
+  }
+}
+
+@layer {
+  .wide {
+    width: calc(100vw - 80px);
+  }
+}
+
+@layer {
+  .wider {
+    width: calc(100vw - 160px);
   }
 }

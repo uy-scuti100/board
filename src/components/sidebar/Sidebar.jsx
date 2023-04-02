@@ -17,7 +17,7 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
-    <div className="flex-6 border-r border-[#89a25a] min-h-[100vh] fixed top-0 bottom-0 h-screen z-40 bg-white">
+    <div className="flex-6 border-r border-[#89a25a] min-h-[100%]  bg-white">
       <div className="h-[50px] md:h-[50px] px-1 flex items-center justify-center">
         <Link to="/">
           <span className="text-[16px] md:text-[18px] font-bold text-redo font-[inter]">
@@ -29,28 +29,34 @@ const Sidebar = () => {
       <div className="pl-[10px] text-[12px] md:text-[12px]">
         <ul>
           <p className="text-[10px] text-[#999] mt-[15px] mb-[5px]">MAIN</p>
-          <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
-            <MdDashboard className="inline-block text-redo text-[18px]" />
-            <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">
-              {" "}
-              Dashboard{" "}
-            </span>
-          </li>
+          <Link to="/">
+            <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
+              <MdDashboard className="inline-block text-redo text-[18px]" />
+              <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">
+                {" "}
+                Dashboard{" "}
+              </span>
+            </li>
+          </Link>
           <p className="text-[10px] text-[#999] mt-[15px] mb-[5px]">OPTIONS</p>
-          <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
-            <BiUser className="inline-block text-redo text-[18px]" />
-            <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">
-              {" "}
-              Users
-            </span>
-          </li>
-          <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
-            <FaStoreAlt className="inline-block text-redo text-[18px]" />
-            <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">
-              {" "}
-              Products
-            </span>
-          </li>
+          <Link to="/users">
+            <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
+              <BiUser className="inline-block text-redo text-[18px]" />
+              <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">
+                {" "}
+                Users
+              </span>
+            </li>
+          </Link>
+          <Link to="/products">
+            <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
+              <FaStoreAlt className="inline-block text-redo text-[18px]" />
+              <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">
+                {" "}
+                Products
+              </span>
+            </li>
+          </Link>
           <li className="flex items-center p-[5px] cursor-pointer hover:bg-[#ece8ff]">
             <BsCreditCard className="inline-block text-redo text-[18px]" />
             <span className="hidden  md:block text-[13px] text-[#888] font-normal ml-[10px]">

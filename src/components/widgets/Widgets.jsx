@@ -62,7 +62,7 @@ const Widgets = ({ type }) => {
   const diff = 30;
 
   return (
-    <div className="flex justify-between p-2 md:p-4 md:w-[250px] shadow-lg rounded-md h-[120px] w-full">
+    <div className="flex justify-between p-2 md:p-4 w-[250px] shadow-lg rounded-md h-[120px]">
       <div className=" flex flex-col justify-between ">
         <div className="text-[12px] md:text-[14px] text-[#777]">
           {data.title}

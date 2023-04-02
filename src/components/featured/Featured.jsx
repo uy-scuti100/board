@@ -10,7 +10,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 const Featured = () => {
   return (
-    <div className="md:basis-2/6 shadow-lg p-2">
+    <div className="md:basis-2/6 p-2">
       <div className="flex justify-between items-center text-gray text-[16px] font-medium">
         Total Revenue <MdOutlineMoreVert style={{ cursor: "pointer" }} />
       </div>

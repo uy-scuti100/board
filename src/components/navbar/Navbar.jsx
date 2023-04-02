@@ -20,7 +20,7 @@ const Navbar = () => {
   };
   return (
     <div>
-      <div className="flex items-center justify-between px-2 md:px-4 h-[50px] border-b border-[#89a25a] text-[14px] fixed top-0 left-0 right-0  ml-[68px] md:ml-[142px] bg-white z-50">
+      <div className="flex items-center justify-between px-2 md:px-4 h-[50px] border-b border-[#89a25a] text-[14px] fixed top-0 left-0 right-0 ml-[68px] md:ml-[126px] bg-white z-50">
         <div className=" flex items-center border border-[#b6b6b6] px-2 rounded ">
           <input
             type="text"
@@ -93,7 +93,7 @@ const Navbar = () => {
           )}
           <div className="ml-[8px]">
             <img
-              src="/images/IMG_E0142.jpg"
+              src="images/IMG_E0142.jpg"
               alt="avatar"
               className="w-[30px] h-[30px] rounded-full object-cover cursor-pointer flex md:hidden"
             />

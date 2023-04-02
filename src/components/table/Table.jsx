@@ -23,7 +23,7 @@ const List = () => {
     {
       id: 2235235,
       product: "Playstation 5",
-      img: "images/black model.jpg",
+      img: "images/white model.jpg",
       customer: "Michael Doe",
       date: "1 March",
       amount: 900,
@@ -33,7 +33,7 @@ const List = () => {
     {
       id: 2342353,
       product: "Redragon S101",
-      img: "images/black model.jpg",
+      img: "images/dark sky.jpg",
       customer: "John Smith",
       date: "1 March",
       amount: 35,
@@ -43,7 +43,7 @@ const List = () => {
     {
       id: 2357741,
       product: "Razer Blade 15",
-      img: "images/black model.jpg",
+      img: "images/desert sand.jpg",
       customer: "Jane Smith",
       date: "1 March",
       amount: 920,
@@ -53,7 +53,7 @@ const List = () => {
     {
       id: 2342355,
       product: "ASUS ROG Strix",
-      img: "images/black model.jpg",
+      img: "images/store.jpg",
       customer: "Harold Carol",
       date: "1 March",
       amount: 2000,
@@ -91,7 +91,7 @@ const List = () => {
             {rows.map((row) => (
               <TableRow key={row.id}>
                 <TableCell>{row.id}</TableCell>
-                <div className="hidden md:block">
+                <div>
                   <TableCell>
                     <div className="flex items-center ">
                       <img
@@ -106,7 +106,7 @@ const List = () => {
                 <TableCell>{row.customer}</TableCell>
                 <TableCell>{row.date}</TableCell>
                 <TableCell>{row.amount}</TableCell>
-                <div className="hidden md:block">
+                <div>
                   <TableCell>{row.method}</TableCell>
                 </div>
                 <TableCell>
